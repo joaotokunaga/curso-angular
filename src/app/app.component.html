@@ -1,20 +1,5 @@
-<div class="class">
-	<h1>Hello World!</h1>
-	<div>
-		<p>Alguma coisa</p>
-	</div>
-	<app-first-component></app-first-component>
-	<a href="aaa">Clique aqui</a>
-	<div style="margin-top: 20px; margin-left: 20px;">
-		<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
-	</div>
-	<div style="margin-top: 20px; margin-left: 20px;">
-		<app-directives></app-directives>
-	</div>
-</div>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emitter></app-emitter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<h1>Hello World!</h1>
+<nav>
+	<a routerLink="/">Home</a>&nbsp;<a routerLink="/list">List</a>
+</nav>
+<router-outlet></router-outlet>
