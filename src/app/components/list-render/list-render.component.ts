@@ -25,7 +25,8 @@ export class ListRenderComponent implements OnInit {
 	}
 
 	removeAnimal(animal: Animal) {
-		this.animals = this.listService.remove(this.animals, animal)
+		this.animals = this.animals.filter((a) => animal.name !== a.name)
+		this.listService.remove(animal.id).subscribe()
 	}
 
 	// Como o retorno é um Observable, tem que usar o subscribe para esperar alguma coisa chegar
