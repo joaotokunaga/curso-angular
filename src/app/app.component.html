@@ -1,12 +1,15 @@
-<h1>Hello World!</h1>
-<div>
-	<p>Alguma coisa</p>
+<div class="class">
+	<h1>Hello World!</h1>
+	<div>
+		<p>Alguma coisa</p>
+	</div>
+	<app-first-component></app-first-component>
+	<a href="aaa">Clique aqui</a>
+	<div style="margin-top: 20px; margin-left: 20px;">
+		<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
+	</div>
+	<div style="margin-top: 20px; margin-left: 20px;">
+		<app-directives></app-directives>
+	</div>
 </div>
-<app-first-component></app-first-component>
-<a href="aaa">Clique aqui</a>
-<div style="margin-top: 20px; margin-left: 20px;">
-	<app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
-</div>
-<div style="margin-top: 20px; margin-left: 20px;">
-	<app-directives></app-directives>
-</div>
+<app-if-render></app-if-render>
